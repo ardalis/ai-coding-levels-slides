@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Five Levels of AI Coding</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ====== TITLE ====== -->
+      <section id="title" class="section-divider" data-background-color="#2C2822">
+        <h1 style="color: #F7F3E8; font-size: 60pt; line-height: 1.1;">The Five Levels<br>of AI Coding</h1>
+        <p class="title-sub">From Spicy Autocomplete to the Software Factory</p>
+        <p class="title-attr">Based on Dan Shapiro's framework</p>
+      </section>
+
+      <!-- ====== LEVEL 0 ====== -->
+      <section id="level-0">
+        <h2><span class="level-badge l0">Level 0</span> Manual Labor</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-car-side"></i>
+                <p>"Your parents' Volvo"</p>
+              </div>
+              <ul>
+                <li class="fragment">AI used only as an enhanced search tool</li>
+                <li class="fragment">Work progresses at human typing speed</li>
+                <li class="fragment">Full human authorship throughout</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-0" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== LEVEL 1 ====== -->
+      <section id="level-1">
+        <h2><span class="level-badge l1">Level 1</span> Assisted Tasks</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-gauge-high"></i>
+                <p>"Lane-keeping &amp; cruise control"</p>
+              </div>
+              <ul>
+                <li class="fragment">Discrete delegation: unit tests, docstrings</li>
+                <li class="fragment">Tools: GitHub Copilot, ChatGPT</li>
+                <li class="fragment">Productivity gains without changing job fundamentals</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-1" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== LEVEL 2 ====== -->
+      <section id="level-2">
+        <h2><span class="level-badge l2">Level 2</span> Active Collaboration</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-road"></i>
+                <p>"Highway Autopilot"</p>
+              </div>
+              <ul>
+                <li class="fragment">AI becomes a true colleague — offload tedious work</li>
+                <li class="fragment">Flow state becomes achievable</li>
+                <li class="fragment"><strong>Danger:</strong> feels complete, but it's only intermediate</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-2" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== LEVEL 3 ====== -->
+      <section id="level-3">
+        <h2><span class="level-badge l3">Level 3</span> Human Oversight</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-user-tie"></i>
+                <p>"Waymo with a safety driver"</p>
+              </div>
+              <ul>
+                <li class="fragment">Human transitions to managerial role</li>
+                <li class="fragment">Days spent reviewing large code diffs</li>
+                <li class="fragment">Most practitioners plateau here</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-3" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== LEVEL 4 ====== -->
+      <section id="level-4">
+        <h2><span class="level-badge l4">Level 4</span> Autonomous Operation</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-taxi"></i>
+                <p>"Robotaxi"</p>
+              </div>
+              <ul>
+                <li class="fragment">Developers write specs — not code</li>
+                <li class="fragment">AI runs autonomously for extended periods</li>
+                <li class="fragment">Humans return later to check test results</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-4" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== LEVEL 5 ====== -->
+      <section id="level-5">
+        <h2><span class="level-badge l5">Level 5</span> Fully Automated</h2>
+        <div class="content">
+          <div style="display: grid; grid-template-columns: 44fr 56fr; gap: 40px; flex: 1;">
+            <div class="level-info">
+              <div class="car-metaphor">
+                <i class="fa-solid fa-industry"></i>
+                <p>"The Dark Factory"</p>
+              </div>
+              <ul>
+                <li class="fragment">Specs transform directly into software</li>
+                <li class="fragment">Opaque, automated processes end-to-end</li>
+                <li class="fragment">Teams of &lt;5 running massive systems</li>
+              </ul>
+            </div>
+            <div class="diagram-area">
+              <canvas id="canvas-level-5" width="530" height="510"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== CLOSING ====== -->
+      <section id="closing" class="section-divider" data-background-color="#2C2822">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; width: 100%; align-items: center;">
+          <div style="display: flex; justify-content: center;">
+            <canvas id="canvas-closing" width="460" height="530"></canvas>
+          </div>
+          <div style="text-align: left;">
+            <h1 style="color: #F7F3E8; font-size: 58pt; line-height: 1.1;">Where are<br>you?</h1>
+            <p style="color: #C8B89A; font-size: 17pt; margin-top: 18px; line-height: 1.6;">Each level demands different<br>tools, mindsets, and workflows.</p>
+            <div style="display: flex; align-items: center; gap: 20px; margin-top: 24px;">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/&bgcolor=2C2822&color=C8B89A" alt="QR Code" style="width: 100px; height: 100px; border-radius: 4px;">
+              <a href="https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/" target="_blank" style="color: #C8B89A; font-size: 13pt; text-decoration: underline; line-height: 1.4;">danshapiro.com/blog/2026/01/<br>the-five-levels-from-spicy-<br>autocomplete-to-the-software-factory</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://unpkg.com/roughjs@4.5.2/bundled/rough.js"></script>
+  <script>
+    const LEVELS = [
+      { name: 'Manual Labor',     color: '#8B9DC3' },
+      { name: 'Assisted Tasks',   color: '#6AAEA4' },
+      { name: 'Active Collab',    color: '#87A96B' },
+      { name: 'Human Oversight',  color: '#C4A83A' },
+      { name: 'Autonomous',       color: '#D4834A' },
+      { name: 'Dark Factory',     color: '#C05050' },
+    ];
+
+    function drawDiagram(canvasId, activeLevel, showAll) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas || typeof rough === 'undefined') return;
+
+      const rc = rough.canvas(canvas);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const maxLevel = showAll ? 5 : activeLevel;
+      const blockW = 340;
+      const blockH = 66;
+      const gap    = 10;
+      const startX = (canvas.width - blockW) / 2;
+      const baseY  = canvas.height - 18;
+
+      for (let i = 0; i <= maxLevel; i++) {
+        const isTop = (!showAll && i === activeLevel);
+        const y     = baseY - (i + 1) * (blockH + gap) + gap;
+        const alpha = showAll ? 1 : (i < activeLevel ? 0.72 : 1);
+
+        ctx.globalAlpha = alpha;
+
+        rc.rectangle(startX, y, blockW, blockH, {
+          fill:        LEVELS[i].color,
+          fillStyle:   'solid',
+          stroke:      '#2C2C2C',
+          strokeWidth: isTop ? 2.8 : 1.6,
+          roughness:   1.6 + i * 0.18,
+          fillWeight:  2,
+        });
+
+        // Label
+        ctx.globalAlpha = 1;
+        ctx.font         = `bold ${isTop ? 20 : 16}px "Caveat", cursive`;
+        ctx.fillStyle    = '#FFFFFF';
+        ctx.textAlign    = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.shadowColor  = 'rgba(0,0,0,0.45)';
+        ctx.shadowBlur   = 3;
+        ctx.fillText(`Level ${i}: ${LEVELS[i].name}`, startX + blockW / 2, y + blockH / 2);
+        ctx.shadowBlur = 0;
+      }
+      ctx.globalAlpha = 1;
+
+      // Upward arrow on right side when multiple blocks
+      if (maxLevel > 0) {
+        const ax  = startX + blockW + 22;
+        const ay1 = baseY - (blockH + gap) + gap + blockH / 2;
+        const ay2 = baseY - (maxLevel + 1) * (blockH + gap) + gap + blockH / 2;
+        rc.line(ax, ay1, ax, ay2, {
+          stroke: '#9A8E7E',
+          strokeWidth: 1.4,
+          roughness: 2,
+        });
+        // arrowhead
+        rc.line(ax - 6, ay2 + 10, ax, ay2, { stroke: '#9A8E7E', strokeWidth: 1.4, roughness: 1.2 });
+        rc.line(ax + 6, ay2 + 10, ax, ay2, { stroke: '#9A8E7E', strokeWidth: 1.4, roughness: 1.2 });
+      }
+    }
+
+    function drawAll() {
+      for (let i = 0; i <= 5; i++) {
+        drawDiagram(`canvas-level-${i}`, i, false);
+      }
+      drawDiagram('canvas-closing', 5, true);
+    }
+
+    Reveal.initialize({
+      width: 1280,
+      height: 720,
+      margin: 0,
+      controls: true,
+      progress: true,
+      slideNumber: false,
+      hash: true,
+      transition: 'slide',
+      center: false,
+    });
+
+    document.fonts.ready.then(() => {
+      Reveal.on('ready', drawAll);
+      Reveal.on('slidechanged', drawAll);
+      // Also draw immediately if Reveal is already initialized
+      if (Reveal.isReady()) drawAll();
+    });
+  </script>
+</body>
+</html>

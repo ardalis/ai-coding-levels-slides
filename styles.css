@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap');
+
+:root {
+  --background-color: #F7F3E8;
+  --section-divider-bg: #2C2822;
+  --heading-font: "Caveat", cursive;
+  --body-font: "Nunito", sans-serif;
+  --base-font-size: 32px;
+  --text-size: 16pt;
+  --h1-size: 52pt;
+  --h2-size: 30pt;
+  --h3-size: 22pt;
+  --footnote-size: 11pt;
+  --primary-color: #8B9DC3;
+  --secondary-color: #D4A843;
+  --text-color: #2C2C2C;
+  --muted-color: #7A6F65;
+  --line-color: #2C2C2C;
+  --slide-padding: 55px;
+  --slide-padding-top: 32px;
+  --content-gap: 12px;
+  --box-radius: 4px;
+}
+
+/* ===================== BASE ===================== */
+
+.reveal {
+  font-family: var(--body-font);
+  font-size: var(--base-font-size);
+}
+
+.reveal strong, .reveal b { font-weight: 700; }
+
+.reveal-viewport {
+  background-color: var(--background-color);
+}
+
+.reveal-viewport.is-section-divider .slide-background.present {
+  background-color: var(--section-divider-bg) !important;
+}
+
+.reveal h1, .reveal h2, .reveal h3,
+.reveal h4, .reveal h5, .reveal h6 {
+  font-family: var(--heading-font);
+  text-transform: none;
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.reveal h1 { font-size: var(--h1-size); }
+.reveal h2 { font-size: var(--h2-size); margin-bottom: 0; }
+.reveal h3 { font-size: var(--h3-size); }
+
+.reveal p, .reveal li, .reveal td, .reveal th, .reveal blockquote {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* ===================== LISTS ===================== */
+
+.reveal ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+}
+
+.reveal ul li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+}
+
+.reveal ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 9px;
+  height: 9px;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.reveal ul ul li::before {
+  background: var(--muted-color);
+  width: 6px;
+  height: 6px;
+}
+
+.reveal blockquote p { font-size: inherit; }
+
+/* ===================== SLIDE LAYOUT ===================== */
+
+.reveal .slides section {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: var(--slide-padding-top) var(--slide-padding) var(--slide-padding) var(--slide-padding) !important;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.reveal .slides section.stack { padding: 0 !important; }
+
+.reveal .slides section > .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: var(--content-gap);
+  text-align: left;
+  overflow: hidden;
+}
+
+.reveal .slides section > .footnote {
+  position: absolute;
+  bottom: 15px;
+  left: var(--slide-padding);
+  right: var(--slide-padding);
+  font-size: var(--footnote-size);
+  color: var(--muted-color);
+}
+
+/* ===================== SECTION DIVIDERS ===================== */
+
+.reveal .slides section.section-divider {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+}
+
+.reveal .slides section.section-divider h1 {
+  font-size: var(--h1-size);
+  text-align: center;
+}
+
+.reveal .slides section.section-divider p {
+  font-size: 18pt;
+  color: var(--muted-color);
+}
+
+/* ===================== TEXT UTILITIES ===================== */
+
+.text-lg  { font-size: 18pt !important; }
+.text-xl  { font-size: 20pt !important; }
+.text-2xl { font-size: 24pt !important; }
+.text-3xl { font-size: 28pt !important; }
+.text-4xl { font-size: 32pt !important; }
+.text-muted    { color: var(--muted-color) !important; }
+.text-center   { text-align: center !important; }
+.text-uppercase{ text-transform: uppercase; letter-spacing: 0.1em; }
+.font-light    { font-weight: 300; }
+.font-bold     { font-weight: 700; }
+
+/* ===================== LEVEL BADGE ===================== */
+
+.level-badge {
+  display: inline-block;
+  font-family: var(--heading-font);
+  font-size: 0.65em;
+  font-weight: 700;
+  padding: 2px 12px 2px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+}
+
+.l0 { background: #8B9DC3; }
+.l1 { background: #6AAEA4; }
+.l2 { background: #87A96B; }
+.l3 { background: #C4A83A; }
+.l4 { background: #D4834A; }
+.l5 { background: #C05050; }
+
+/* ===================== CAR METAPHOR BOX ===================== */
+
+.car-metaphor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0,0,0,0.055);
+  border-left: 3px solid var(--text-color);
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+.car-metaphor i {
+  font-size: 20pt;
+  color: var(--muted-color);
+  flex-shrink: 0;
+}
+
+.car-metaphor p {
+  font-size: 15pt !important;
+  font-style: italic;
+  color: var(--muted-color);
+  margin: 0 !important;
+}
+
+/* ===================== DIAGRAM AREA ===================== */
+
+.diagram-area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.diagram-area canvas {
+  display: block;
+}
+
+/* ===================== LEVEL INFO ===================== */
+
+.level-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===================== TITLE SLIDE EXTRAS ===================== */
+
+.title-sub {
+  font-size: 20pt;
+  color: #C8B89A;
+  margin-top: 10px;
+}
+
+.title-attr {
+  font-size: 13pt;
+  color: #7A6F65;
+  margin-top: 24px;
+}
+
+/* ===================== BLOCKQUOTES ===================== */
+
+.reveal blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  background: none;
+  box-shadow: none;
+  width: 100%;
+  max-width: none;
+}
+
+.reveal blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: var(--muted-color);
+}
